@@ -33,7 +33,7 @@ A `Dockerfile` is a ["text document that contains all the commands you would nor
 ```dockerfile
 FROM alpine
 
-CMD ["echo", "Hello, world! This is a simple Dockerfile using echo."]
+CMD ["echo", "Go Palo Alto Networks! This is a simple Dockerfile."]
 ```
 
 - In order to build the image we begin with:
@@ -41,7 +41,7 @@ CMD ["echo", "Hello, world! This is a simple Dockerfile using echo."]
 ```shell
 $ docker build --no-cache -t simple-dockerfile-example .
 $ docker run simple-dockerfile-example
-A simple Dockerfile
+Go Palo Alto Networks! This is a simple Dockerfile.
 ```
 
 While this is helpful for getting the basic workflow of `docker build` / `docker run` it is more instructive to see an application be built. For this example, we will adapt from the [Node with Docker Official Guide](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/).
